@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNIPOLE - Center Pillar of Success</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* ===== Global Styles ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      color: #333;
+      background-color: #f2f6fc;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: #fff;
+      padding: 1rem 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav img {
+      height: 45px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li {
+      font-weight: 600;
+    }
+
+    nav ul li a:hover {
+      color: #004aad;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 0;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1 1 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      color: #004aad;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    .btn-primary {
+      background: #f7b500;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: #004aad;
+    }
+
+    .hero img {
+      flex: 1 1 400px;
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    /* ===== Products Section ===== */
+    .products {
+      padding: 4rem 0;
+      background: #fff;
+    }
+
+    .products h2 {
+      text-align: center;
+      color: #004aad;
+      margin-bottom: 2rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background: #f9fbff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      max-width: 80px;
+      margin-bottom: 1rem;
+    }
+
+    /* ===== Innovation Section ===== */
+    .innovation {
+      padding: 4rem 0;
+      background: linear-gradient(135deg, #004aad, #001f4d);
+      color: #fff;
+      text-align: center;
+    }
+
+    .innovation h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .innovation p {
+      margin-bottom: 2rem;
+    }
+
+    /* ===== Careers Section ===== */
+    .careers {
+      padding: 4rem 0;
+      background: #fff;
+      text-align: center;
+    }
+
+    .careers h2 {
+      color: #004aad;
+      margin-bottom: 1rem;
+    }
+
+    .careers p {
+      margin-bottom: 1.5rem;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #001f4d;
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    footer img {
+      height: 40px;
+      margin-bottom: 1rem;
+    }
+
+    footer p {
+      margin-bottom: 1rem;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .social-icons a {
+      color: #fff;
+      font-size: 1.2rem;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #f7b500;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="container">
+      <nav>
+        <img src="https://drive.google.com/uc?id=1WUxzzbxcUIiuyM9mQjBiHh8AdXNdsxWc" alt="UNIPOLE Logo">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#innovation">Innovation</a></li>
+          <li><a href="#careers">Careers</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero container" id="about">
+    <div class="hero-text">
+      <h1>Your Vision, Our Commitment</h1>
+      <p>At UNIPOLE, we stand as the center pillar of success for our clients. With innovative software and cutting-edge technology, we empower businesses to grow, adapt, and thrive.</p>
+      <a href="#products" class="btn-primary">Discover More</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" alt="Team working">
+  </section>
+
+  <!-- ===== Products Section ===== -->
+  <section class="products" id="products">
+    <div class="container">
+      <h2>Our Products</h2>
+
+      <h3 style="text-align:center; margin:2rem 0 1rem;">Software Solutions</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://img.icons8.com/color/96/000000/software.png" alt="">
+          <h3>ERP Suite</h3>
+          <p>Streamlined business operations with scalable ERP software.</p>
+        </div>
+        <div class="product-card">
+          <img src="https://img.icons8.com/color/96/000000/cloud.png" alt="">
+          <h3>Cloud CRM</h3>
+          <p>Manage customers efficiently and build lasting relationships.</p>
+        </div>
+        <div class="product-card">
+          <img src="https://img.icons8.com/color/96/000000/analytics.png" alt="">
+          <h3>Analytics Dashboard</h3>
+          <p>Powerful data insights for smarter business decisions.</p>
+        </div>
+      </div>
+
+      <h3 style="text-align:center; margin:3rem 0 1rem;">Technology Solutions</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://img.icons8.com/color/96/000000/battery.png" alt="">
+          <h3>Battery Management System</h3>
+          <p>Advanced energy solutions for a sustainable future.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Innovation Section ===== -->
+  <section class="innovation" id="innovation">
+    <div class="container">
+      <h2>Smart Innovation, Powered by UNIPOLE</h2>
+      <p>We integrate intelligence into every solution, helping businesses make smarter, faster, and more informed decisions.</p>
+      <a href="#about" class="btn-primary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ===== Careers Section ===== -->
+  <section class="careers" id="careers">
+    <div class="container">
+      <h2>Join the UNIPOLE Family</h2>
+      <p>Be part of a team that builds impactful solutions and shapes the future of technology.</p>
+      <a href="#" class="btn-primary">Apply Now</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <img src="https://drive.google.com/uc?id=1WUxzzbxcUIiuyM9mQjBiHh8AdXNdsxWc" alt="UNIPOLE Logo">
+      <p>UNIPOLE – Your Center Pillar of Success</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
